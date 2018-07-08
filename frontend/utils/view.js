@@ -25,7 +25,7 @@ const createEnv = (path, opts) => {
 }
 console.log(path.join(__dirname , '../'))
 var env = createEnv(path.join(__dirname, '../'), {
-    watch: false,
+    watch: true,
     filters: {
         hex: function (n) {
             return '0x' + n.toString(16);
